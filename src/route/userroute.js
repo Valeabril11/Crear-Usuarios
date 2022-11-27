@@ -7,9 +7,9 @@ const { inicio, postusuario, putusuario, getusuario, deleteusuario } = require('
 
 
 router.get('/', inicio);
-router.get('/usuario', getusuario);
+router.get('/usuario/:id', getusuario);
 router.post('/usuario', postusuario);
-router.put('/usuario', putusuario);
-router.delete('/usuario', deleteusuario);
+router.put('/usuario/:id', putusuario);
+router.delete('/usuario/:id', deleteusuario);
 
 module.exports = router;
